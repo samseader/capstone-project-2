@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F3EEB8;
+    justify-content: end;
+    border: black 2px solid;
+}
+
+
+#header {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: black;
+
+}
+
+.hero1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #BEDEFF;
+    background: linear-gradient(90deg, rgba(190, 222, 255, 1) 0%, rgba(255, 242, 167, 1) 50%, rgba(255, 165, 0, 1) 100%);
+    border-bottom: black 2px solid;
+}
+
+#logo {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.title1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+}
+
+.intro1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    background-color: #F3EEB8
+}
+
+.portrait {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portrait {
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.portrait-text {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.projects {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    background-color: #F3EEB8;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    justify-items: center;
+    align-items: center;
+}
+
+.proj1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.proj2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.proj3 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .projects>* {
+        grid-area: auto;
+    }
+}
